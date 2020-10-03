@@ -1,0 +1,148 @@
+html{
+    font-family: 'Inter', sans-serif;
+}
+button{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: none;
+    font-size: 1em;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+button > img {
+    margin-right: 1em;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    overflow: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 30em;
+    padding: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("/assets/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 31.5em;
+    background-attachment: fixed;
+}
+
+.bottom-sheet-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 31em;
+    position: fixed;
+    top: 80vh;
+    left: 0;
+    right: 0;
+    transition: all .5s ease-out;
+}
+.bottom-sheet{
+    background-color: #040D1A;
+    padding: 1.5em;
+    border-radius: 1em 1em 0 0;
+    max-height: 85vh;
+}
+
+.highlight {
+    font-size: 1em;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.highlight-button{
+    display: inline;
+    text-align: left;
+    background-color: #363D48;
+    font-weight: 400;
+}
+
+p{
+    margin: 0;
+    color: #CDCFD1;
+    font-size: 0.688em;
+}
+
+
+.photo-profile{
+    height: 5em;
+    width: 5em;
+    background-color: grey;
+    margin:0 auto 1em auto;
+    border-radius: 100%;
+}
+
+h1{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.125em;
+    margin: 0;
+}
+
+h4{
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.625em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    opacity: 45%;
+}
+
+.line{
+    background-color: #DADADA;
+    height: 1px;
+    width: 80%;
+    margin-bottom: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#expand{
+    height: 2em;
+    width: 2em;
+    background-color: #363D48;
+    border-radius: 0.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#expand-icon{
+    transition: transform .5s;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+.link-container{
+    height: max-content;
+    max-height: 80vh;
+    overflow: auto;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+}
+
+.link-container::-webkit-scrollbar {
+    display: none;
+}
