@@ -36,7 +36,7 @@ body{
     background-image: url("/assets/bg.webp");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 31.5em;
+    background-size: cover;
     background-attachment: fixed;
 }
 
