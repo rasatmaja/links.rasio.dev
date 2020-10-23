@@ -85,8 +85,6 @@ p{
 
 .photo-profile{
     display: block;
-    height: 5em;
-    width: 5em;
     background-color: grey;
     margin:0 auto 1em auto;
     border-radius: 100%;
