@@ -46,3 +46,7 @@ On my journey to building this project I learned a few things and I ran into som
 1. Implement basic HTML CSS JavaScript
 2. Manipulatng dome HTML by Javascript
 3. Using animation translate
+
+## License
+This project is licensed under the terms of the **MIT** license.
+>You can check out the full license [here](https://raw.githubusercontent.com/rasatmaja/links.rasio.dev/master/LICENSE?token=APSNE65XSISDOTRKDYX5M6K7YXHWM) 
