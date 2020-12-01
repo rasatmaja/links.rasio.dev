@@ -50,4 +50,4 @@ On my journey to building this project I learned a few things and I ran into som
 
 ## License
 This project is licensed under the terms of the **MIT** license.
->You can check out the full license [here](https://raw.githubusercontent.com/rasatmaja/links.rasio.dev/master/LICENSE?token=APSNE65XSISDOTRKDYX5M6K7YXHWM) 
+>You can check out the full license [here](https://raw.githubusercontent.com/rasatmaja/links.rasio.dev/master/LICENSE) 
