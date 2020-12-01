@@ -8,7 +8,8 @@ A web app to display social media and highlight links. The purpose of this proje
 ---
 
 ## Built With
-
+* [NextJS](https://nextjs.org/) - The React Framework ***(implemented soon)***
+* [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development. ***(implemented soon)***
 * [Vercel](https://vercel.com/dashboard) - Deploy web projects with the best frontend developer experience and highest end-user performance.
 
 
