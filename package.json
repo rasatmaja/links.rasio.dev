@@ -9,6 +9,7 @@
     "email": "contact@rasio.dev",
     "url": "https://rasio.dev/"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rasatmaja/links.rasio.dev.git"
