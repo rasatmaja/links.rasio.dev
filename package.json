@@ -1,6 +1,7 @@
 {
   "name": "links.rasio.dev",
   "version": "1.0.0",
+  "description": "⚡ A web app to display social media and highlight links. The purpose of this project is to show links on social media profile.",
   "private": true,
   "scripts": {
     "dev": "next dev",
