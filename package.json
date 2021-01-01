@@ -13,6 +13,9 @@
     "type": "git",
     "url": "git+https://github.com/rasatmaja/links.rasio.dev.git"
   },
+  "bugs": {
+    "url": "https://github.com/rasatmaja/links.rasio.dev/issues"
+  },
   "keywords": [
     "Social Media Links",
     "NodeJS",
