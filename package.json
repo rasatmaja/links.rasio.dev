@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "⚡ A web app to display social media and highlight links. The purpose of this project is to show links on social media profile.",
   "private": true,
+  "homepage": "https://links.rasio.dev/",
   "author": {
     "name": "Rasio Atmaja",
     "email": "contact@rasio.dev",
@@ -12,6 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/rasatmaja/links.rasio.dev.git"
   },
+  "keywords": [
+    "Social Media Links",
+    "NodeJS",
+    "NextJS",
+    "React"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
