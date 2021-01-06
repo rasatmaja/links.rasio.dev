@@ -1,6 +1,6 @@
 # Links
 
-A web app to display social media and highlight links. The purpose of this project is to show links on social media profile. The purpose of this roject is to create custom LinkTree using NextJS, and Tailwind. All data will be fetch from project `links-barnacle` 
+A web app to display social media and highlight links. The purpose of this project is to show links on social media profile. The purpose of this project is to create custom LinkTree using NextJS, and Tailwind. All data will be fetch from project [links-barnacle](https://github.com/rasatmaja/links-barnacle)
 
 ![](https://img.shields.io/badge/Version-1.0.0-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Build-Sucess-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
@@ -8,8 +8,8 @@ A web app to display social media and highlight links. The purpose of this proje
 ---
 
 ## Built With
-* [NextJS](https://nextjs.org/) - The React Framework ***(implemented soon)***
-* [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development. ***(implemented soon)***
+* [NextJS](https://nextjs.org/) - The React Framework
+* [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
 * [Vercel](https://vercel.com/dashboard) - Deploy web projects with the best frontend developer experience and highest end-user performance.
 
 
