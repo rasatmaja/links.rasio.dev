@@ -18,7 +18,7 @@ export default function Home() {
         <div>
           Surabaya, Indonesia 🇮🇩
         </div>
-        <img src="/arrow.svg" className="mx-auto my-5" width="20" height="20"></img>
+        <img src="/arrow.svg" alt="Arrow Down Icon" className="mx-auto my-5" width="20" height="20"></img>
       </div>
     </div>
   )
