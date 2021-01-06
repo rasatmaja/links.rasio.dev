@@ -1,4 +1,5 @@
 import '../styles/tailwind.css'
+import '../styles/global.css'
 import Layout from '../components/layout'
 import { ThemeProvider } from "next-themes";
 
