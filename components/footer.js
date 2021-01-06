@@ -2,7 +2,7 @@ import { getFontDefinitionFromNetwork } from "next/dist/next-server/server/font-
 
 export default function Footer(){
     return(
-        <footer className="p-10 border-gray-200 dark:border-gray-900 border-t-2">
+        <footer className="p-10 border-secondry-light dark:border-secondry-dark border-t-2">
            <div className="max-w-screen-md mx-auto">
                 <p className="text-center text-sm">
                     Develop with ❤️ by <span className="font-bold">Rasio Atmaja</span>

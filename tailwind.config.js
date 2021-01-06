@@ -12,7 +12,14 @@ module.exports = {
       'serif': [...defaultTheme.fontFamily.serif],
       'mono': [...defaultTheme.fontFamily.mono]
     },
-    extend: {},
+    extend: {
+      colors: {
+        'primary-light': '#F5F5F5',
+        'secondry-light': '#DDDDDD',
+        'primary-dark': '#121212',
+        'secondry-dark': '#2B2B2B',
+      }
+    },
   },
   variants: {
     extend: {},
