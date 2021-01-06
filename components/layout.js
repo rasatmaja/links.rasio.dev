@@ -4,7 +4,9 @@ export default function Layout({children}){
     return (
         <div className="bg-primary-light dark:bg-primary-dark text-gray-700 dark:text-gray-200 min-h-screen transition-colors duration-500">
             <Header></Header>
-            {children}
+            <div className="max-w-screen-md mx-auto">
+                {children}
+            </div>
             <Footer></Footer>
         </div>    
     )

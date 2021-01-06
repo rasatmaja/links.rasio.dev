@@ -20,7 +20,7 @@ export default function DarkMode(){
         <button
           aria-label="Toggle Dark Mode"
           type="button"
-          className="bg-secondry-light dark:bg-secondry-dark rounded p-3 h-10 w-10 m-2"
+          className="bg-secondry-light dark:bg-secondry-dark rounded p-3 h-10 w-10"
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         >
           {isMounted && (
