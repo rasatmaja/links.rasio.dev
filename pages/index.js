@@ -1,6 +1,11 @@
 import Head from 'next/head'
+import LinkCard from '../components/card.list.item'
 
 export default function Home() {
+  let linksCards = []
+  for (let i=0; i < 5; i++){
+    linksCards.push(<LinkCard key={i}></LinkCard>)
+  }
   return (
     <div className="p-5">
       <Head>
@@ -18,7 +23,12 @@ export default function Home() {
         <div>
           Surabaya, Indonesia 🇮🇩
         </div>
-        <img src="/arrow.svg" alt="Arrow Down Icon" className="mx-auto my-5" width="20" height="20"></img>
+        <img src="/arrow.svg" alt="Arrow Down Icon" className="mx-auto my-5 animate-bounce" width="20" height="20"></img>
+      </div>
+      
+      <div className="px-3 grid grid-cols-1 gap-3">
+        <h3 className="text-center font-medium">Let’s Connect 🎯</h3>
+        { linksCards }
       </div>
     </div>
   )
