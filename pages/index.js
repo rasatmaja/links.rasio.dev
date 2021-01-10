@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="p-5">
       <Head>
-        <title>Create Next App</title>
+        <title>Rasio Atmaja - Links</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="text-center text-base text-gray-500 dark:text-gray-300 font-medium">
