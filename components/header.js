@@ -1,5 +1,5 @@
-import DarkMode from './dark.mode.toggle'
-export default function Header(){
+import DarkMode from './dark.mode.toggle';
+export default function Header() {
     return (
         <header>
             <nav className="max-w-screen-md mx-auto flex justify-end p-5">
@@ -8,5 +8,5 @@ export default function Header(){
                 </div>
             </nav>
         </header>
-    )
+    );
 }

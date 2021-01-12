@@ -14,7 +14,7 @@ const sections = [
     {
         name: 'COOL_STUFF',
         alias: 'Cool Stuff 😎'
-    },
-]
+    }
+];
 
-export default sections
+export default sections;
