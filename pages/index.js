@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import LinkCard from '../components/card.list.item'
 import sections from '../constants/sections'
 
@@ -10,14 +11,14 @@ export default function Home({data}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="text-center text-base text-gray-500 dark:text-gray-300 font-medium">
-        <div className="w-28 h-28 bg-gray-400 mx-auto rounded-full mb-5"></div>
+        <Image src="/me.jpg" alt="Rasio Ganang Atmaja Photo Profile" width={100} height={100} className="rounded-full"/>
         <div className="text-2xl text-gray-700 dark:text-gray-50 font-extrabold">
           Rasio Ganang Atmaja
         </div>
-        <div>
+        <div className="text-sm">
           Software Engineer, Researcher 🚀
         </div>
-        <div>
+        <div className="text-sm">
           Surabaya, Indonesia 🇮🇩
         </div>
         <img src="/arrow.svg" alt="Arrow Down Icon" className="mx-auto my-5 animate-bounce" width="20" height="20"></img>
