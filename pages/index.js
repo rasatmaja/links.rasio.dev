@@ -28,7 +28,7 @@ export default function Home({data}) {
           let links = data[section.name]
           let linksCards = []
           links.map((link, i) => {
-            linksCards.push(<LinkCard key={i}/>)
+            linksCards.push(<LinkCard data={link} key={i}/>)
           })
           return (
             <div key={idx} className="px-3 grid grid-cols-1 gap-3 mb-10">
