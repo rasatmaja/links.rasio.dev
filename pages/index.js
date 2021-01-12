@@ -28,7 +28,7 @@ export default function Home({ initialData }) {
                 </div>
                 <div className="text-sm">
                     Software Engineer, Researcher{' '}
-                    <span role="img" aria-label="Indonesia">
+                    <span role="img" aria-label="Rocket">
                         🚀
                     </span>
                 </div>
