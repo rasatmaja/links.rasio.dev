@@ -1,9 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import useSWR from 'swr'
 import LinkCard from '../components/card.list.item'
 import sections from '../constants/sections'
+import fetcher from '../libs/fetcher'
 
-export default function Home({data}) {
+export default function Home({ initialData }) {
+  const { data } = useSWR(URL, fetcher, { initialData })
+
   return (
     <div className="p-5">
       <Head>
@@ -24,7 +28,7 @@ export default function Home({data}) {
         <img src="/arrow.svg" alt="Arrow Down Icon" className="mx-auto my-5 animate-bounce" width="20" height="20"></img>
       </div>
       {
-        sections.map((section, idx) => {
+        data ? sections.map((section, idx) => {
           let links = data[section.name]
           let linksCards = []
           links.map((link, i) => {
@@ -36,17 +40,17 @@ export default function Home({data}) {
               { linksCards }
             </div>
           )
-        })      
+        })  : 'Loading data ...'    
       }
     </div>
   )
 }
 
+const URL = 'https://api.rasatmaja.com/links'
 export async function getServerSideProps() {
-  // Fetch data from external API
-  const res = await fetch(`https://api.rasatmaja.com/links`)
-  const data = await res.json()
+  // create promise to API URL
+  const data = await fetcher(URL)
 
   // Pass data to the page via props
-  return { props: { data } }
+  return { props: { initialData: data } }
 }
