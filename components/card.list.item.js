@@ -1,15 +1,17 @@
-export default function CardLink(){
-    return(
-        <div className="bg-secondry-light dark:bg-secondry-dark p-3 rounded-md flex justify-between">
-            <div>
-                <h3 className="font-medium">
-                    Email
-                </h3>
-                <p className="text-sm">
-                    If you would like to discuss about your ideas.
-                </p>
+export default function CardLink({data}){
+    return (
+        <a href={data.hyperlinks} target="_blank" >
+            <div className="bg-secondry-light dark:bg-secondry-dark p-3 rounded-md flex justify-between">
+                <div>
+                    <h3 className="font-medium">
+                        { data.name }
+                    </h3>
+                    <p className="text-sm">
+                        { data.description }
+                    </p>
+                </div>
+                <img src="/arrow-right.svg" width="16" height="16" alt="Arrow right icon"></img>
             </div>
-            <img src="/arrow-right.svg" width="16" height="16" alt="Arrow right icon"></img>
-        </div>
+        </a>
     )
 }
