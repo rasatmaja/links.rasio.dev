@@ -17,15 +17,16 @@ export default function DarkMode() {
                 type="button"
                 className="h-10 w-10 flex justify-center items-center"
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+                <label htmlFor="toggle" className={style.darkmodeLabel}>
+                    x
+                </label>
                 <input
                     id="toggle"
                     className={style.toggle}
                     type="checkbox"
-                    defaultChecked={isMounted && theme === 'light'}
+                    checked={isMounted && theme === 'light'}
+                    readOnly={true}
                 />
-                <label htmlFor="toggle" className={style.darkmodeLabel}>
-                    DarkMode
-                </label>
             </button>
         </div>
     );
