@@ -21,8 +21,11 @@ export default function DarkMode() {
                     id="toggle"
                     className={style.toggle}
                     type="checkbox"
-                    checked={isMounted && theme === 'light'}
+                    defaultChecked={isMounted && theme === 'light'}
                 />
+                <label htmlFor="toggle" className={style.darkmodeLabel}>
+                    DarkMode
+                </label>
             </button>
         </div>
     );
