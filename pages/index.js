@@ -14,6 +14,12 @@ export default function Home({ initialData }) {
             <Head>
                 <title>Rasio Atmaja - Links</title>
                 <link rel="icon" href="/favicon.ico" />
+                <meta
+                    name="Description"
+                    content="All about Rasio Atmaja social media links and highlight links"></meta>
+                <meta
+                    name="Keywords"
+                    content="Rasio Atmaja, Rasio Ganang Atmaja, Social Media, Links"></meta>
             </Head>
             <div className="text-center text-base text-gray-500 dark:text-gray-300 font-medium">
                 <Image
