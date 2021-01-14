@@ -69,7 +69,7 @@ Home.propTypes = {
 };
 
 const URL = 'https://api.rasatmaja.com/links';
-export async function getServerSideProps() {
+export async function getStaticProps() {
     // create promise to API URL
     const data = await fetcher(URL);
 
