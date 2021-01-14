@@ -14,11 +14,18 @@ export default function Home({ initialData }) {
             <Head>
                 <title>Rasio Atmaja - Links</title>
                 <link rel="icon" href="/favicon.ico" />
+                <meta
+                    name="Description"
+                    content="All about Rasio Atmaja social media links and highlight links"></meta>
+                <meta
+                    name="Keywords"
+                    content="Rasio Atmaja, Rasio Ganang Atmaja, Social Media, Links"></meta>
             </Head>
             <div className="text-center text-base text-gray-500 dark:text-gray-300 font-medium">
                 <Image
                     src="/me.jpg"
                     alt="Rasio Ganang Atmaja Photo Profile"
+                    priority={true}
                     width={100}
                     height={100}
                     className="rounded-full"
@@ -42,8 +49,8 @@ export default function Home({ initialData }) {
                     src="/arrow.svg"
                     alt="Arrow Down Icon"
                     className="mx-auto my-5 animate-bounce"
-                    width="20"
-                    height="20"></img>
+                    width="16"
+                    height="16"></img>
             </div>
             {data
                 ? sections.map((section, idx) => {
@@ -69,7 +76,7 @@ Home.propTypes = {
 };
 
 const URL = 'https://api.rasatmaja.com/links';
-export async function getServerSideProps() {
+export async function getStaticProps() {
     // create promise to API URL
     const data = await fetcher(URL);
 

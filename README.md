@@ -44,9 +44,9 @@ npm run dev
 ## What I Learn from this Project 
 On my journey to building this project I learned a few things and I ran into some problems like:
 
-1. Implement basic HTML CSS JavaScript
-2. Manipulatng dome HTML by Javascript
-3. Using animation translate
+1. Implement Next JS, and Tailwind CSS
+2. Implement SWR to fetching data from API
+3. Implement dark mode using TailwindCSS and next-theme
 
 ## License
 This project is licensed under the terms of the **MIT** license.
