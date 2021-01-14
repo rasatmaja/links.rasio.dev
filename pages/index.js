@@ -25,6 +25,7 @@ export default function Home({ initialData }) {
                 <Image
                     src="/me.jpg"
                     alt="Rasio Ganang Atmaja Photo Profile"
+                    priority={true}
                     width={100}
                     height={100}
                     className="rounded-full"
@@ -48,8 +49,8 @@ export default function Home({ initialData }) {
                     src="/arrow.svg"
                     alt="Arrow Down Icon"
                     className="mx-auto my-5 animate-bounce"
-                    width="20"
-                    height="20"></img>
+                    width="16"
+                    height="16"></img>
             </div>
             {data
                 ? sections.map((section, idx) => {
