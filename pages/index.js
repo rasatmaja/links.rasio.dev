@@ -75,7 +75,8 @@ Home.propTypes = {
     initialData: PropTypes.object.isRequired
 };
 
-const URL = 'https://api.rasatmaja.com/links';
+const BASE_URL = process.env.API_BASE_URL || 'https://api.rasatmaja.com/';
+const URL = BASE_URL + 'links';
 export async function getStaticProps() {
     // create promise to API URL
     const data = await fetcher(URL);
