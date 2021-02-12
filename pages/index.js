@@ -20,6 +20,16 @@ export default function Home({ initialData }) {
                 <meta
                     name="Keywords"
                     content="Rasio Atmaja, Rasio Ganang Atmaja, Social Media, Links"></meta>
+
+                <meta name="twitter:card" content="summary_large_image"></meta>
+                <meta property="twitter:domain" content="links.rasio.dev"></meta>
+                <meta property="twitter:url" content="https://links.rasio.dev"></meta>
+                <meta name="twitter:title" content="Rasio Atmaja - Links"></meta>
+                <meta
+                    name="twitter:description"
+                    content="All about Rasio Atmaja social media links and highlight links"></meta>
+                <meta name="twitter:site" content="@rasatmaja" />
+                <meta name="twitter:creator" content="@rasatmaja" />
             </Head>
             <div className="text-center text-base text-gray-500 dark:text-gray-300 font-medium">
                 <Image
