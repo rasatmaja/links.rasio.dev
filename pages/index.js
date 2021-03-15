@@ -14,11 +14,37 @@ export default function Home({ initialData }) {
             <Head>
                 <title>Rasio Atmaja - Links</title>
                 <link rel="icon" href="/favicon.ico" />
+                <meta
+                    name="Description"
+                    content="All about Rasio Atmaja social media links and highlight links"></meta>
+                <meta
+                    name="Keywords"
+                    content="Rasio Atmaja, Rasio Ganang Atmaja, Social Media, Links"></meta>
+
+                <meta property="og:url" content="https://links.rasio.dev" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Rasio Atmaja - Links" />
+                <meta
+                    property="og:description"
+                    content="All about Rasio Atmaja social media links and highlight links"
+                />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content="links.rasio.dev" />
+                <meta property="twitter:url" content="https://links.rasio.dev" />
+                <meta name="twitter:title" content="Rasio Atmaja - Links" />
+                <meta
+                    name="twitter:description"
+                    content="All about Rasio Atmaja social media links and highlight links"
+                />
+                <meta name="twitter:site" content="@rasatmaja" />
+                <meta name="twitter:creator" content="@rasatmaja" />
             </Head>
             <div className="text-center text-base text-gray-500 dark:text-gray-300 font-medium">
                 <Image
                     src="/me.jpg"
                     alt="Rasio Ganang Atmaja Photo Profile"
+                    priority={true}
                     width={100}
                     height={100}
                     className="rounded-full"
@@ -42,8 +68,8 @@ export default function Home({ initialData }) {
                     src="/arrow.svg"
                     alt="Arrow Down Icon"
                     className="mx-auto my-5 animate-bounce"
-                    width="20"
-                    height="20"></img>
+                    width="16"
+                    height="16"></img>
             </div>
             {data
                 ? sections.map((section, idx) => {
@@ -68,11 +94,13 @@ Home.propTypes = {
     initialData: PropTypes.object.isRequired
 };
 
-const URL = 'https://api.rasatmaja.com/links';
-export async function getServerSideProps() {
+const BASE_URL = process.env.API_BASE_URL || 'https://api.rasatmaja.com/';
+const URL = BASE_URL + 'links';
+export async function getStaticProps() {
     // create promise to API URL
     const data = await fetcher(URL);
 
     // Pass data to the page via props
-    return { props: { initialData: data } };
+    // Add revalidate data every one day
+    return { props: { initialData: data }, revalidate: 86400 };
 }
