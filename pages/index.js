@@ -33,7 +33,7 @@ export default function Home({ initialData }) {
                 <meta property="twitter:domain" content="links.rasio.dev" />
                 <meta property="twitter:url" content="https://links.rasio.dev" />
                 <meta name="twitter:title" content="Rasio Atmaja - Links" />
-                <met
+                <meta
                     name="twitter:description"
                     content="All about Rasio Atmaja social media links and highlight links"
                 />
@@ -101,5 +101,6 @@ export async function getStaticProps() {
     const data = await fetcher(URL);
 
     // Pass data to the page via props
-    return { props: { initialData: data } };
+    // Add revalidate data every one day
+    return { props: { initialData: data }, revalidate: 86400 };
 }
