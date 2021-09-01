@@ -101,6 +101,6 @@ export async function getStaticProps() {
     const data = await fetcher(URL);
 
     // Pass data to the page via props
-    // Add revalidate data every one day
-    return { props: { initialData: data }, revalidate: 86400 };
+    // Add revalidate data every 5 hours
+    return { props: { initialData: data }, revalidate: 18000 };
 }
