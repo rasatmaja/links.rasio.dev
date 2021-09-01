@@ -29,8 +29,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0.4",
-    "next-themes": "^0.0.10",
+    "next": "^11.1.2",
+    "next-themes": "^0.0.15",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "swr": "^0.4.0"
