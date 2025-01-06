@@ -4,12 +4,12 @@
 
 **Pull request type** :  
 
-- [ ] 🐞 Bug Fix
-- [x] 🦌 Feature
-- [ ] 🤴 Code style update (formatting, renaming)
-- [ ] 🏇🏼 Refactoring (no functional changes, no api changes)
-- [ ] 🏅 Build related changes
-- [ ] 🦧 Documentation content changes
+- [ ] Bug Fix
+- [x] Feature
+- [ ] Code style update (formatting, renaming)
+- [ ] Refactoring (no functional changes, no api changes)
+- [ ] Build related changes
+- [ ] Documentation content changes
 
 **Descriptions** :  
 
