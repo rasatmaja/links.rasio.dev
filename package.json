@@ -2,6 +2,7 @@
   "name": "links.rasio.dev",
   "scripts": {
     "dev": "wrangler dev --ip 127.0.0.1 --port 8787",
+    "dev:db:up": "wrangler d1 execute links --local --file=./src/db/schema.sql",
     "deploy": "wrangler deploy --minify"
   },
   "dependencies": {
