@@ -1,14 +1,17 @@
 import { Hono } from 'hono'
+import { api } from './api/index'
+import { page } from './page';
 
 type Bindings = {
-  DB: D1Database; 
+    DB: D1Database;
 }
 
 const app = new Hono<{ Bindings: Bindings }>()
 
-app.get('/api/v1/links', async (c) => {
-  const links = await c.env.DB.prepare('select * from links').all()
-  return c.json(links.results)
-})
+// Mount api
+app.route("/api", api)
+
+// Mount page
+app.route("", page)
 
 export default app
