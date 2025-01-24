@@ -9,9 +9,7 @@
 	},
 	"customizations": {
 		"vscode": {
-			"extensions": [
-				"Codeium.codeium"
-			]
+			"extensions": ["Codeium.codeium"]
 		}
 	}
 

@@ -1,12 +1,12 @@
-import { Links } from "../models/links"
-import { Context } from 'hono'
+import { Links } from "../models/links";
+import { Context } from "hono";
 
 export class LinksRepo {
-    async get(c: Context) {
-        const query = await c.env.DB.prepare('select * from links').all()
+	async get(c: Context) {
+		const query = await c.env.DB.prepare("select * from links").all();
 
-        const links: Links[] = query.results
+		const links: Links[] = query.results;
 
-        return links
-    }
+		return links;
+	}
 }
