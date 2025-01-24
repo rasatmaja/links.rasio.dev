@@ -9,10 +9,10 @@ export const Layout = (props: { title: string; children?: any }) => {
 				<title>${props.title}</title>
 				<link
 					rel="stylesheet"
-					href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"
+					href="/tailwind.css"
 				/>
 			</head>
-			<body style="padding: 1em 2em">
+			<body>
 				<header>
 					<h1>
 						<a href="/">Links</a>
