@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
 import { api } from './api/index'
-import { page } from './page';
+import { pages } from './pages';
 
 type Bindings = {
     DB: D1Database;
@@ -12,6 +12,6 @@ const app = new Hono<{ Bindings: Bindings }>()
 app.route("/api", api)
 
 // Mount page
-app.route("", page)
+app.route("", pages)
 
 export default app
