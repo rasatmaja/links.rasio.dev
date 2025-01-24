@@ -8,7 +8,6 @@ const linkRepo = new LinksRepo();
 
 pages.get("/", async (c: Context) => {
 	const links = await linkRepo.get(c);
-
 	return c.html(<Layout title="Home" children={<List data={links} />} />);
 });
 
