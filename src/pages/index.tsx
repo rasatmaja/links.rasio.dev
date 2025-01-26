@@ -9,12 +9,16 @@ const linkRepo = new LinksRepo();
 
 pages.get("/", async (c: Context) => {
 	const links = await linkRepo.get(c);
-	return c.html(<Layout children={
-		<div>
-			<Profile />
-			<List data={links} />
-		</div>	
-	} />);
+	return c.html(
+		<Layout
+			children={
+				<div>
+					<Profile />
+					<List data={links} />
+				</div>
+			}
+		/>,
+	);
 });
 
 export { pages };
