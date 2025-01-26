@@ -3,3 +3,4 @@
 .wrangler
 node_modules
 *.log
+public
