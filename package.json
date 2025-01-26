@@ -4,21 +4,21 @@
 		"dev": "wrangler dev --ip 127.0.0.1 --port 8787",
 		"dev:db:up": "wrangler d1 execute links --local --file=./src/db/schema.sql",
 		"dev:build:css": "postcss ./src/tailwind.css -o ./public/tailwind.css --watch",
-
 		"build:css": "postcss ./src/tailwind.css -o ./public/tailwind.css",
 		"format": "prettier --config .prettierrc --ignore-path .prettierignore '**/*.{json,js,jsx,ts,tsx,css,scss,md}' --write",
 		"deploy": "wrangler deploy --minify"
 	},
 	"dependencies": {
-		"hono": "^4.6.16"
+		"hono": "^4.6.18"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20250109.0",
+		"@cloudflare/workers-types": "^4.20250124.3",
 		"@tailwindcss/postcss": "^4.0.0",
 		"autoprefixer": "^10.4.20",
 		"postcss": "^8.5.1",
 		"postcss-cli": "^11.0.0",
-		"prettier": "^2.7.1",
-		"wrangler": "^3.101.0"
+		"prettier": "^3.4.2",
+		"prettier-plugin-tailwindcss": "^0.6.11",
+		"wrangler": "^3.105.1"
 	}
 }
