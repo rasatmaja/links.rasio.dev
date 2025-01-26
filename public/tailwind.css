@@ -688,10 +688,6 @@
 		font-size: var(--text-sm);
 		line-height: var(--tw-leading, var(--text-sm--line-height));
 	}
-	.text-xl {
-		font-size: var(--text-xl);
-		line-height: var(--tw-leading, var(--text-xl--line-height));
-	}
 	.text-xs {
 		font-size: var(--text-xs);
 		line-height: var(--tw-leading, var(--text-xs--line-height));
@@ -699,10 +695,6 @@
 	.font-bold {
 		--tw-font-weight: var(--font-weight-bold);
 		font-weight: var(--font-weight-bold);
-	}
-	.font-extrabold {
-		--tw-font-weight: var(--font-weight-extrabold);
-		font-weight: var(--font-weight-extrabold);
 	}
 	.font-light {
 		--tw-font-weight: var(--font-weight-light);
@@ -716,19 +708,12 @@
 		--tw-font-weight: var(--font-weight-normal);
 		font-weight: var(--font-weight-normal);
 	}
-	.tracking-wide {
-		--tw-tracking: var(--tracking-wide);
-		letter-spacing: var(--tracking-wide);
-	}
 	.tracking-wider {
 		--tw-tracking: var(--tracking-wider);
 		letter-spacing: var(--tracking-wider);
 	}
 	.text-gray-50 {
 		color: var(--color-gray-50);
-	}
-	.text-gray-100 {
-		color: var(--color-gray-100);
 	}
 	.text-gray-200 {
 		color: var(--color-gray-200);
@@ -738,9 +723,6 @@
 	}
 	.text-gray-400 {
 		color: var(--color-gray-400);
-	}
-	.text-gray-500 {
-		color: var(--color-gray-500);
 	}
 	.transition-colors {
 		transition-property: color, background-color, border-color, outline-color,
