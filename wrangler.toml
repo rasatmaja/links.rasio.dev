@@ -9,4 +9,4 @@ assets = { directory = "./public" }
 [[d1_databases]]
 binding = "DB"
 database_name = "links"
-database_id = "7ceab28c-3f2b-493f-9609-4f598f6edee7"
+database_id = "640ef3af-2976-4332-97c7-e602c3f8f6d2"
