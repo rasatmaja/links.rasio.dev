@@ -1,15 +1,22 @@
 {
-  "name": "links.rasio.dev",
-  "scripts": {
-    "dev": "wrangler dev --ip 127.0.0.1 --port 8787",
-    "dev:db:up": "wrangler d1 execute links --local --file=./src/db/schema.sql",
-    "deploy": "wrangler deploy --minify"
-  },
-  "dependencies": {
-    "hono": "^4.6.16"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250109.0",
-    "wrangler": "^3.101.0"
-  }
+	"name": "links.rasio.dev",
+	"scripts": {
+		"dev": "wrangler dev --ip 127.0.0.1 --port 8787",
+		"dev:db:up": "wrangler d1 execute links --local --file=./src/db/schema.sql",
+		"dev:build:css": " npx @tailwindcss/cli -i ./src/tailwind.css -o ./public/tailwind.css --minify --watch",
+		"build:css": " npx @tailwindcss/cli -i ./src/tailwind.css -o ./public/tailwind.css --minify",
+		"format": "prettier --config .prettierrc --ignore-path .prettierignore '**/*.{json,js,jsx,ts,tsx,css,scss,md}' --write",
+		"deploy": "wrangler deploy --minify"
+	},
+	"dependencies": {
+		"hono": "^4.6.18"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20250124.3",
+		"@tailwindcss/cli": "^4.0.0",
+		"prettier": "^3.4.2",
+		"prettier-plugin-tailwindcss": "^0.6.11",
+		"tailwindcss": "^4.0.0",
+		"wrangler": "^3.105.1"
+	}
 }
