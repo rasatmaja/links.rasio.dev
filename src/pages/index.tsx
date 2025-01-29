@@ -1,8 +1,9 @@
 import { Hono, Context } from "hono";
 import { LinksRepo } from "../repository";
-import { List } from "./components/lists";
+import { Lists } from "./components/lists";
 import { Layout } from "./layouts";
 import { Profile } from "./components/profile";
+import { Footer } from "./components/footer";
 
 const pages = new Hono();
 const linkRepo = new LinksRepo();
@@ -14,7 +15,8 @@ pages.get("/", async (c: Context) => {
 			children={
 				<div>
 					<Profile />
-					<List data={links} />
+					<Lists data={links} />
+					<Footer />
 				</div>
 			}
 		/>,
