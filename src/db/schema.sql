@@ -3,6 +3,7 @@ CREATE TABLE links (
     name TEXT,
     description TEXT,
     link TEXT,
+    section TEXT,
 
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
