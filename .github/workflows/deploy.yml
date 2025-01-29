@@ -7,7 +7,7 @@ on:
 
 jobs:
   deployment:
-    environment: production
+    environment: Production
     runs-on: ubuntu-latest
     name: Deploy Clodflare Worker
     permissions:
