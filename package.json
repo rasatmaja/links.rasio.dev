@@ -13,10 +13,10 @@
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20250124.3",
-		"@tailwindcss/cli": "^4.0.0",
+		"@tailwindcss/cli": "^4.0.9",
 		"prettier": "^3.4.2",
 		"prettier-plugin-tailwindcss": "^0.6.11",
-		"tailwindcss": "^4.0.0",
-		"wrangler": "^3.105.1"
+		"tailwindcss": "^4.0.9",
+		"wrangler": "^3.111.0"
 	}
 }
