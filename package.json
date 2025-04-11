@@ -9,14 +9,14 @@
 		"deploy": "wrangler deploy --minify"
 	},
 	"dependencies": {
-		"hono": "^4.7.5"
+		"hono": "^4.7.6"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20250321.0",
-		"@tailwindcss/cli": "^4.0.17",
+		"@cloudflare/workers-types": "^4.20250410.0",
+		"@tailwindcss/cli": "^4.1.3",
 		"prettier": "^3.5.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",
-		"tailwindcss": "^4.0.17",
-		"wrangler": "^4.4.1"
+		"tailwindcss": "^4.1.3",
+		"wrangler": "^4.10.0"
 	}
 }
