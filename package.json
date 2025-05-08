@@ -12,11 +12,11 @@
 		"hono": "^4.7.8"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20250430.0",
+		"@cloudflare/workers-types": "^4.20250508.0",
 		"@tailwindcss/cli": "^4.1.5",
 		"prettier": "^3.5.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",
 		"tailwindcss": "^4.1.5",
-		"wrangler": "^4.13.2 "
+		"wrangler": "^4.14.4 "
 	}
 }
